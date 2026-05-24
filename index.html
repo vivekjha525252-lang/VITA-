@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Market Search</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <p class="tag">Research faster</p>
+        <h1>World Market Topic Search</h1>
+        <p>
+          Type only a few words and discover relevant global market insights,
+          trends, risks, and opportunities.
+        </p>
+      </header>
+
+      <section class="search-box">
+        <label for="topicInput">What are you researching?</label>
+        <div class="search-row">
+          <input
+            id="topicInput"
+            type="text"
+            placeholder="e.g. EV battery Asia, coffee exports Brazil"
+            autocomplete="off"
+          />
+          <button id="searchBtn">Search</button>
+        </div>
+        <p class="hint">Tip: Try short phrases like “ai chips”, “gold demand”, or “solar policy”.</p>
+      </section>
+
+      <section>
+        <div id="status" class="status" aria-live="polite"></div>
+        <div id="results" class="results"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
